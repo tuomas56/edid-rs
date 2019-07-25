@@ -1,0 +1,9 @@
+[package]
+name = "edid-rs"
+version = "0.1.0"
+authors = ["tuomas56 <pigworts2@gmail.com>"]
+edition = "2018"
+
+[features]
+default = []
+no_std = []
