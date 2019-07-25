@@ -1,8 +1,13 @@
 # `edid-rs`
 
+[![edid-rs](https://docs.rs/edid-rs/badge.svg)](https://docs.rs/edid-rs/)
+[![edid-rs](https://img.shields.io/crates/v/edid-rs.svg)](https://crates.io/crate/edid-rs/)
+
 A pure-Rust crate to parse EDID data with `no_std` support. This crate does not include methods for gathering the data from the monitor.
 
 To enable `no_std` support, ensure the `alloc` crate is available, use feature `no_std`, and then implement `edid_rs::Read` instead of `std::io::Read` for data sources.
+
+Dual licensed under MIT and Apache-2.0.
 
 ### Examples
 
