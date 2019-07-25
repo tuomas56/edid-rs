@@ -5,7 +5,7 @@ authors = ["tuomas56 <pigworts2@gmail.com>"]
 edition = "2018"
 description = "An EDID parsing crate with no_std support."
 repository = "https://github.com/tuomas56/edid-rs"
-license = "Apache-2.0 or MIT"
+license = "Apache-2.0/MIT"
 
 [features]
 default = []
