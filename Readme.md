@@ -1,7 +1,7 @@
 # `edid-rs`
 
-[![edid-rs](https://docs.rs/edid-rs/badge.svg)](https://docs.rs/edid-rs/)
-[![edid-rs](https://img.shields.io/crates/v/edid-rs.svg)](https://crates.io/crate/edid-rs/)
+[![edid-rs](https://docs.rs/edid-rs/badge.svg)](https://docs.rs/edid-rs/0.1.0/edid_rs/)
+[![edid-rs](https://img.shields.io/crates/v/edid-rs.svg)](https://crates.io/crates/edid-rs/)
 
 A pure-Rust crate to parse EDID data with `no_std` support. This crate does not include methods for gathering the data from the monitor.
 
