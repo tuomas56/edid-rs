@@ -602,7 +602,7 @@ impl DetailedTiming {
         let pixel_clock = r.read_u16()? as u32 * 10000;
         let ha_low = r.read_u8()? as u16;
 
-        if pixel_clock == 0 || ha_low == 0 {
+        if pixel_clock == 0 {
             return Ok(None);
         }
 
@@ -610,6 +610,10 @@ impl DetailedTiming {
         let h_high = r.read_u8()? as u16;
 
         let horizontal_active = ha_low | (((h_high & 0xf0) >> 4) << 8);
+        if horizontal_active == 0 {
+            return Ok(None);
+        }
+
         let horizontal_blanking = hb_low | (((h_high & 0x0f) >> 0) << 8);
 
         let va_low = r.read_u8()? as u16;
